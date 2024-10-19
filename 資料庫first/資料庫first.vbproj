@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D733F171-C9CD-42EC-9FCE-5F5CFE530729}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>資料庫first.My.MyApplication</StartupObject>
+    <RootNamespace>資料庫first</RootNamespace>
+    <AssemblyName>資料庫first</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>資料庫first.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>資料庫first.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OleDb, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.OleDb.7.0.0\lib\net462\System.Data.OleDb.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="user\Order_2.Designer.vb">
+      <DependentUpon>Order_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="user\Order_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user\roominfo2.Designer.vb">
+      <DependentUpon>roominfo2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="user\roominfo2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user\roominfo4.Designer.vb">
+      <DependentUpon>roominfo4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="user\roominfo4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user\roominfo6666.Designer.vb">
+      <DependentUpon>roominfo6666.vb</DependentUpon>
+    </Compile>
+    <Compile Include="user\roominfo6666.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user\signup.Designer.vb">
+      <DependentUpon>signup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="user\signup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user\StartForm.Designer.vb">
+      <DependentUpon>StartForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="user\StartForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user\UserFunction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user\UserFunction.Designer.vb">
+      <DependentUpon>UserFunction.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manger\OrderManage\CurrentOrder.Designer.vb">
+      <DependentUpon>CurrentOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="manger\OrderManage\CurrentOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manger\OrderManage\DelOrder.Designer.vb">
+      <DependentUpon>DelOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="manger\OrderManage\DelOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="user\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user\ClientOrder.Designer.vb">
+      <DependentUpon>ClientOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="user\ClientOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user\RoomInfo1.Designer.vb">
+      <DependentUpon>RoomInfo1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="user\RoomInfo1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manger\EmployeeLogin.Designer.vb">
+      <DependentUpon>EmployeeLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="manger\EmployeeLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manger\FuntionForm.Designer.vb">
+      <DependentUpon>FuntionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="manger\FuntionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manger\Room\AddRoom.Designer.vb">
+      <DependentUpon>AddRoom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="manger\Room\AddRoom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manger\EmployeeManage.Designer.vb">
+      <DependentUpon>EmployeeManage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="manger\EmployeeManage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manger\AddEmployee.Designer.vb">
+      <DependentUpon>AddEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="manger\AddEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manger\DelEmployee.Designer.vb">
+      <DependentUpon>DelEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="manger\DelEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manger\ChangeEmplye.Designer.vb">
+      <DependentUpon>ChangeEmplye.vb</DependentUpon>
+    </Compile>
+    <Compile Include="manger\ChangeEmplye.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="manger\Room\RoomChange.Designer.vb">
+      <DependentUpon>RoomChange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="manger\Room\RoomChange.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manger\OrderManage\ChangeOrder.Designer.vb">
+      <DependentUpon>ChangeOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="manger\OrderManage\ChangeOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user\FilterForm.Designer.vb">
+      <DependentUpon>FilterForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="user\FilterForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user\Order.Designer.vb">
+      <DependentUpon>Order.vb</DependentUpon>
+    </Compile>
+    <Compile Include="user\Order.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="user\Order_2.resx">
+      <DependentUpon>Order_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user\roominfo2.resx">
+      <DependentUpon>roominfo2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user\roominfo4.resx">
+      <DependentUpon>roominfo4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user\roominfo6666.resx">
+      <DependentUpon>roominfo6666.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user\signup.resx">
+      <DependentUpon>signup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user\StartForm.resx">
+      <DependentUpon>StartForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user\UserFunction.resx">
+      <DependentUpon>UserFunction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manger\OrderManage\CurrentOrder.resx">
+      <DependentUpon>CurrentOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manger\OrderManage\DelOrder.resx">
+      <DependentUpon>DelOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user\ClientOrder.resx">
+      <DependentUpon>ClientOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user\RoomInfo1.resx">
+      <DependentUpon>RoomInfo1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manger\EmployeeLogin.resx">
+      <DependentUpon>EmployeeLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manger\FuntionForm.resx">
+      <DependentUpon>FuntionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manger\Room\AddRoom.resx">
+      <DependentUpon>AddRoom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manger\EmployeeManage.resx">
+      <DependentUpon>EmployeeManage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manger\AddEmployee.resx">
+      <DependentUpon>AddEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manger\DelEmployee.resx">
+      <DependentUpon>DelEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manger\ChangeEmplye.resx">
+      <DependentUpon>ChangeEmplye.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manger\Room\RoomChange.resx">
+      <DependentUpon>RoomChange.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manger\OrderManage\ChangeOrder.resx">
+      <DependentUpon>ChangeOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user\FilterForm.resx">
+      <DependentUpon>FilterForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user\Order.resx">
+      <DependentUpon>Order.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\301f38008976b7e7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\301f38008976b7e71.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_1278.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\底圖.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\底圖1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\返回.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\下一步.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\員工切換.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\登入2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\結帳.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\註冊1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\開始訂房.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\確定.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\顯示預定.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\搜尋.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\取消預定.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\底圖3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\修改房間.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\新增房間.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\員工管理.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\管理訂單.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\取消訂單.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\底圖4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\主畫面.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\刪除員工.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\修改員工.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\修改此房間.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\新增員工.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\刪除房間.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\新增房.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\底圖5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0c6c12c67832fb88b72854e243dbb70d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3b30240a09fd7ebc625cac8314de6e50.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\19bba8a5d2ba009d80e1225257e77b32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\43.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\42.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\總統套房-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\總統套房-3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\總統套房-4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\修改查詢.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
